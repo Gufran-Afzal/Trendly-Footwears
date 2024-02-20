@@ -1,8 +1,13 @@
 {
-    "sections": {
-        "template": {
-            "type": "home-page"
-        }
-    },
-    "order": ["template"]
+  "sections": {
+    "template": {
+      "type": "home-page",
+      "settings": {
+        "hero_img": "shopify:\/\/shop_images\/hero-img.png"
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }

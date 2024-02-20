@@ -1,0 +1,36 @@
+<div class="hero-bg bg-fit md:py-32 py-28 relative">
+    <div class="container mx-auto px-12 xl:px-0">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 z-20 relative"> <!-- Added z-10 and relative -->
+                <div class="my-auto text-center lg:text-left">
+                    <h1 class="protest-riot-regular text-white text-2xl xs:text-3xl md:text-6xl">Elevate Your <span class="text-bright-sun-300">Style,</span><br> Step into <span class="text-bright-sun-300">Trendly Footwear</span></h1>
+                    <p class="text-white font-semibold text-base md:text-2xl my-3 md:my-6">Elevate your style with <span class="text-bright-sun-300">Trendly</span>. Shop chic designs for the modern woman. Step into sophistication now!</p>
+                    <a href="{{ collections }}">
+                        <button type="button" class="shadow__btn">
+                            Shop now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 absolute inset-0 flex justify-center items-center lg:relative">
+                <div class="absolute inset-0 bg-black-950 opacity-40 lg:hidden"></div>
+                {{ section.settings.hero_img | image_url: width: 800 | image_tag: class: 'size-fit w-96' }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "Hero Section",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "hero_img",
+                "label": "Hero Image"
+            }
+        ]
+    }
+    {% endschema %}

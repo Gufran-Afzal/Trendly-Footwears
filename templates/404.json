@@ -1,8 +1,13 @@
 {
-    "sections": {
-        "template": {
-            "type": "404-page.liquid"
-        }
-    },
-    "order": ["template"]
+  "sections": {
+    "template": {
+      "type": "404-page",
+      "settings": {
+        "error_img": "shopify:\/\/shop_images\/404.png"
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }
